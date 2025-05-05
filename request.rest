@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/add-user 
+Content-Type: application/json
+
+{
+    "name": "tes",
+    "email": "tes@tes.com",
+    "gender": "Male"
+}
+
+### 
+
+PUT http://localhost:5000/edit-user/14
+Content-Type: application/json
+
+{
+    "name": "tessss",
+    "email": "tesss@tessss.com",
+    "gender": "Male"
+}
+
+###
+
+DELETE http://localhost:5000/delete-user/17
